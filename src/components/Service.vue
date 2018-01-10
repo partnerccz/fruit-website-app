@@ -1,23 +1,11 @@
 <template>
-  <div style="background-color: #F4F4F4;">
+  <div style="background-color: #F4F4F4;margin-top:5px;padding-bottom: 60px;">
     <div  class="import-product">
       <div><img src="../assets/images/service_t1.png" width="50%"/></div>
       <div class="import-product-list" >
-        <dl>
-          <dt><img src="../assets/images/product.png"/></dt>
-          <dd>日本杨桃</dd>
-        </dl>
-        <dl>
-          <dt><img src="../assets/images/product.png"/></dt>
-          <dd>日本杨桃</dd>
-        </dl>
-        <dl>
-          <dt><img src="../assets/images/product.png"/></dt>
-          <dd>日本杨桃</dd>
-        </dl>
-        <dl>
-          <dt><img src="../assets/images/product.png"/></dt>
-          <dd>日本杨桃</dd>
+        <dl v-for="(ipro,index) in this.importProduct">
+          <dt><img :src="ipro.img_path"/></dt>
+          <dd>{{ipro.img_name}}</dd>
         </dl>
       </div>
     </div>
@@ -25,21 +13,9 @@
     <div class="inland-product">
       <div><img src="../assets/images/service_t1.png" width="50%"/></div>
       <div class="inland-product-list">
-        <dl >
-          <dt><img src="../assets/images/product.png"/></dt>
-          <dd>日本杨桃</dd>
-        </dl>
-        <dl >
-          <dt><img src="../assets/images/product.png"/></dt>
-          <dd>日本杨桃</dd>
-        </dl>
-        <dl >
-          <dt><img src="../assets/images/product.png"/></dt>
-          <dd>日本杨桃</dd>
-        </dl>
-        <dl>
-          <dt><img src="../assets/images/product.png"/></dt>
-          <dd>日本杨桃</dd>
+        <dl v-for="(dpro, index) in this.domesticProduct">
+          <dt><img :src="dpro.img_path"/></dt>
+          <dd>{{dpro.img_name}}</dd>
         </dl>
       </div>
     </div>
@@ -48,7 +24,47 @@
 
 <script>
   export default {
-    name: 'service'
+    name: 'service',
+    data: function () {
+      return {
+        importProduct: [
+          {
+            img_path: require('../assets/images/import/印尼山竹.jpg'),
+            img_name: '印尼山竹'
+          },
+          {
+            img_path: require('../assets/images/import/哥伦比亚燕窝果.jpg'),
+            img_name: '哥伦比亚燕窝果'
+          },
+          {
+            img_path: require('../assets/images/import/草莓.jpg'),
+            img_name: '草莓'
+          },
+          {
+            img_path: require('../assets/images/import/智利车厘子.jpg'),
+            img_name: '智利车厘子'
+          }
+        ],
+        domesticProduct: [
+          {
+            img_path: require('../assets/images/domestic/冰糖木瓜.jpg'),
+            img_name: '冰糖木瓜'
+          },
+          {
+            img_path: require('../assets/images/domestic/不知火丑橘.jpg'),
+            img_name: '不知火丑橘'
+          },
+          {
+            img_path: require('../assets/images/domestic/齐峰翠香猕猴桃.jpg'),
+            img_name: '齐峰翠香猕猴桃'
+          },
+          {
+            img_path: require('../assets/images/domestic/百香果.jpg'),
+            img_name: '百香果'
+          }
+        ]
+      }
+    }
   }
 </script>
 
