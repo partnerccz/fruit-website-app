@@ -5,6 +5,7 @@ import Index from '../components/Index'
 Vue.use(Router)
 const Home = resolve => require(['../components/Home'], resolve)
 const Service = resolve => require(['../components/Service'], resolve)
+const About = resolve => require(['../components/About'], resolve)
 
 export default new Router({
   routes: [
@@ -20,6 +21,10 @@ export default new Router({
       path: '/service',
       name: 'Service',
       component: Service
+    }, {
+      path: '/about',
+      name: About,
+      component: About
     }
   ]
 })
