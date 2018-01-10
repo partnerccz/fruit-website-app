@@ -3,9 +3,9 @@
     <div class="home-container">
       <div class="home-btn" id="home-btn" @click.navite="toHomePage()" style="height: 30px;position:relative;">
         <img src="../assets/images/home_btn.png" width="52" height="30"/>
-        <div style="position: absolute;right:10px;top:18px;">
+        <!--<div style="position: absolute;right:10px;top:18px;">
           <img id="test" src="../assets/images/home_menu.png" width="30" height="30" @click.stop="showMenuList"/>
-          <!--<mt-popup v-model="popupVisible" position="right" style="">-->
+          &lt;!&ndash;<mt-popup v-model="popupVisible" position="right" style="">&ndash;&gt;
           <div id="menu-list" class="menu-list" @click.stop="stopEvent">
             <ul>
               <li class="none-type" @click.stop="toHomePage">首页</li>
@@ -13,8 +13,8 @@
               <li class="none-type" @click.stop="toAboutPage">关于我们</li>
             </ul>
           </div>
-          <!--</mt-popup>-->
-        </div>
+          &lt;!&ndash;</mt-popup>&ndash;&gt;
+        </div>-->
       </div>
       <div class="common-top" id="home-content">
         <home></home>
@@ -59,7 +59,6 @@
     },
     mounted () {
       this.showPage()
-      this.showMenuList()
     },
     methods: {
       toHomePage: function () {
