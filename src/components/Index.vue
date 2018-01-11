@@ -62,22 +62,18 @@
     },
     methods: {
       toHomePage: function () {
-        console.log('toHomePage')
         this.displayIndex = 0
         this.showPage()
       },
       toServicePage: function () {
-        console.log('toServicePage')
         this.displayIndex = 1
         this.showPage()
       },
       toAboutPage: function () {
-        console.log('toAboutPage')
         this.displayIndex = 2
         this.showPage()
       },
       showPage: function () {
-        console.log('showPage')
         if (this.displayIndex === 0) {
           this.idStr = 'home-content'
           this.idContentArr[0] = 'service-content'
@@ -116,7 +112,6 @@
         this.popupVisible = true
       },
       stopEvent: function () {
-        console.log('stopEvent')
       }
     }
   }
