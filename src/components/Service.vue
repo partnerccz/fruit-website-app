@@ -1,7 +1,7 @@
 <template>
   <div style="background-color: #F4F4F4;margin-top:5px;padding-bottom: 60px;">
     <div  class="import-product">
-      <div><img src="../assets/images/service_t1.png" width="50%"/></div>
+      <div><img src="../assets/images/service_t1.png" width="50%" style="margin-top: 10px;"/></div>
       <div class="import-product-list" >
         <dl v-for="(ipro,index) in this.importProduct">
           <dt><img :src="ipro.img_path"/></dt>
@@ -88,7 +88,7 @@
   margin:10px auto 0;
   letter-spacing: 1px;
   color:#1C1C1C;
-  font-size:18px;
+  font-size:1rem;
   font-weight: 500;
 }
   .import-product-list dl img{
@@ -117,7 +117,7 @@
     margin:10px auto 0;
     letter-spacing: 1px;
     color:#1C1C1C;
-    font-size:18px;
+    font-size:1rem;
     font-weight: 500;
   }
   .inland-product-list dl dt img{
