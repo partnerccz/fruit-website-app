@@ -11,7 +11,7 @@
     </div>
 
     <div class="inland-product">
-      <div><img src="../assets/images/service_t1.png" width="50%"/></div>
+      <div><img src="../assets/images/service_t2.png" width="50%"/></div>
       <div class="inland-product-list">
         <dl v-for="(dpro, index) in this.domesticProduct">
           <dt><img :src="dpro.img_path"/></dt>
