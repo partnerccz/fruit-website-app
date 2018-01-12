@@ -1,7 +1,7 @@
 <template>
   <div class="home-page" style="text-align: left;color:#D5D5D4;line-height: 30px;margin:0;height: 300px;">
     <div  class="home-page-top">
-      <div style="height: 300px;"><img src="../assets/images/home_bgi.jpg" width="100%;"/></div>
+      <div style="height: 300px;"><img src="../assets/images/home_bgi.jpg" width="100%;" height="350px"/></div>
       <div style="margin:60px auto 0;padding:20px 20px 50px 30px;letter-spacing: 3px;position:absolute;top:0;left:0;z-index: 0;">
         <span style="color:#709C37">广州指猴互联网科技有限公司</span>，深耕水果行业,致力于整合全球优质的水果资；
         构建高效水果供应服务链；使用移动互联网技术，为合作伙伴提供高质量、高价值、高效率的新零售服务。
