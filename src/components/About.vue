@@ -1,6 +1,6 @@
 <template>
     <div class="about-home">
-      <div class="about-bgi"><img src="../assets/images/map.png"/></div>
+      <div class="about-bgi"><img src="../assets/images/map-z.jpg"/></div>
       <div class="about-content">
         <ul>
           <li>企业口号</li>
