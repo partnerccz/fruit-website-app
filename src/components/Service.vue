@@ -29,37 +29,37 @@
       return {
         importProduct: [
           {
-            img_path: require('../assets/images/import/印尼山竹-z.jpg'),
+            img_path: require('../assets/images/import/印尼山竹.jpg'),
             img_name: '印尼山竹'
           },
           {
-            img_path: require('../assets/images/import/哥伦比亚燕窝果-z.jpg'),
+            img_path: require('../assets/images/import/哥伦比亚燕窝果.jpg'),
             img_name: '哥伦比亚燕窝果'
           },
           {
-            img_path: require('../assets/images/import/草莓-z.jpg'),
+            img_path: require('../assets/images/import/草莓.jpg'),
             img_name: '草莓'
           },
           {
-            img_path: require('../assets/images/import/智利车厘子-z.jpg'),
+            img_path: require('../assets/images/import/智利车厘子.jpg'),
             img_name: '智利车厘子'
           }
         ],
         domesticProduct: [
           {
-            img_path: require('../assets/images/domestic/冰糖木瓜-z.jpg'),
+            img_path: require('../assets/images/domestic/冰糖木瓜.jpg'),
             img_name: '冰糖木瓜'
           },
           {
-            img_path: require('../assets/images/domestic/不知火丑橘-z.jpg'),
+            img_path: require('../assets/images/domestic/不知火丑橘.jpg'),
             img_name: '不知火丑橘'
           },
           {
-            img_path: require('../assets/images/domestic/齐峰翠香猕猴桃-z.jpg'),
+            img_path: require('../assets/images/domestic/齐峰翠香猕猴桃.jpg'),
             img_name: '齐峰翠香猕猴桃'
           },
           {
-            img_path: require('../assets/images/domestic/百香果-z.jpg'),
+            img_path: require('../assets/images/domestic/百香果.jpg'),
             img_name: '百香果'
           }
         ]
