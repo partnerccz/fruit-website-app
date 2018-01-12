@@ -79,6 +79,7 @@
           this.idContentArr[0] = 'service-content'
           this.idContentArr[1] = 'about-content'
           document.getElementById('service-btn').className = 'service-fixed-bottom'
+          document.getElementById('service-btn').style.borderBottom = '1px solid #D6D6D6'
           document.getElementById('about-btn').className = 'about-fixed-bottom'
         } else if (this.displayIndex === 1) {
           this.idStr = 'service-content'
