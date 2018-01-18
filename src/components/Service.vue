@@ -4,7 +4,8 @@
       <div><img src="../assets/images/service_t1.png" width="50%" style="margin-top: 10px;"/></div>
       <div class="import-product-list" >
         <dl v-for="(ipro,index) in this.importProduct">
-          <dt><img :src="ipro.img_path"/></dt>
+          <dt><img v-lazy="ipro.img_path"/></dt>
+          <!--<dt><img :src="ipro.img_path"/></dt>-->
           <dd>{{ipro.img_name}}</dd>
         </dl>
       </div>
@@ -14,7 +15,8 @@
       <div><img src="../assets/images/service_t2.png" width="50%"/></div>
       <div class="inland-product-list">
         <dl v-for="(dpro, index) in this.domesticProduct">
-          <dt><img :src="dpro.img_path"/></dt>
+          <dt><img v-lazy="dpro.img_path"/></dt>
+          <!--<dt><img :src="dpro.img_path"/></dt>-->
           <dd>{{dpro.img_name}}</dd>
         </dl>
       </div>
