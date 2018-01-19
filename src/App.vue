@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <!--<img src="./assets/logo.png">-->
-    <router-view/>
+    <router-view v-wechat-title="$route.meta.title"/>
   </div>
 </template>
 

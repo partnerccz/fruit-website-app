@@ -16,7 +16,8 @@
   "dependencies": {
     "mint-ui": "^2.2.13",
     "vue": "^2.5.2",
-    "vue-router": "^3.0.1"
+    "vue-router": "^3.0.1",
+    "vue-wechat-title": "^2.0.4"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",

@@ -10,7 +10,10 @@ export default new Router({
     {
       path: '/',
       name: 'Index',
-      component: Index
+      component: Index,
+      meta: {
+        title: '广州指猴互联网科技有限公司'
+      }
     }
   ]
 })
