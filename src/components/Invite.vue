@@ -1,5 +1,5 @@
 <template>
-  <div class="invite-container" style="font-size:16px;line-height: 28px;margin:0;padding: 20px 5px 10 10px;">
+  <div class="invite-container" style="font-size:16px;line-height: 28px;margin:0;padding: 20px 5px 10px 10px;">
     <div style="text-align: left;text-indent: 32px;">
       <span style="font-weight: bold;">广州指猴互联网科技有限公司</span>邀请您应聘销售专员
       广州指猴互联网科技有限公司，坐落广州白云区增槎路江南市场，是国内水果最大的批发市场。尤其外国进口水果，国内80%进口水果均由江南市场流入国内市场，此中蕴含大量商机。现因公司业务发展需求，招聘以下岗位：
