@@ -1,6 +1,6 @@
 <template>
   <div id="invite-container">
-    <img src="../images/invite1-3.jpg" width="100%"/>
+    <img src="../images/invite1-4.jpg" width="100%"/>
   </div>
 </template>
 
