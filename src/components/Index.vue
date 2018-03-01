@@ -32,6 +32,12 @@
         <about></about>
       </div>
     </div>
+    <div class="invite-container">
+      <div class="home-btn" id="invite-btn" @click.navite="toInvitePage">招聘信息</div>
+      <div class="common-top" id="invite-content">
+        <invite></invite>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -39,6 +45,7 @@
   import Home from './Home'
   import Service from './Service'
   import About from './About'
+  import Invite from './Invite'
 
   export default {
     name: 'index',
@@ -55,7 +62,8 @@
     components: {
       Home,
       Service,
-      About
+      About,
+      Invite
     },
     mounted () {
       this.showPage()
@@ -73,34 +81,61 @@
         this.displayIndex = 2
         this.showPage()
       },
+      toInvitePage: function () {
+        this.displayIndex = 3
+        this.showPage()
+      },
       showPage: function () {
         if (this.displayIndex === 0) {
           this.idStr = 'home-content'
           this.idContentArr[0] = 'service-content'
           this.idContentArr[1] = 'about-content'
+          this.idContentArr[2] = 'invite-content'
           document.getElementById('service-btn').className = 'service-fixed-bottom'
           document.getElementById('service-btn').style.borderBottom = '1px solid #D6D6D6'
           document.getElementById('about-btn').className = 'about-fixed-bottom'
+          document.getElementById('invite-btn').className = 'invite-fixed-bottom'
         } else if (this.displayIndex === 1) {
           this.idStr = 'service-content'
           this.idContentArr[0] = 'about-content'
           this.idContentArr[1] = 'home-content'
+          this.idContentArr[2] = 'invite-content'
           this.idBtnArr[0] = 'about-btn'
-          document.getElementById('service-btn').className = 'home-btn'
+          document.getElementById('service-content').style.marginTop = '120px'
+          document.getElementById('service-btn').className = 'service-fixed-bottom-up'
+          document.getElementById('invite-btn').className = 'invite-fixed-bottom-up'
           document.getElementById('about-btn').className = 'about-fixed-bottom'
           document.getElementById('about-btn').style.borderTop = '1px solid #D6D6D6'
-        } else {
+        } else if (this.displayIndex === 2) {
           this.idStr = 'about-content'
           this.idContentArr[0] = 'home-content'
           this.idContentArr[1] = 'service-content'
+          this.idContentArr[2] = 'invite-content'
           this.idBtnArr = []
-          document.getElementById('about-btn').className = 'home-btn'
-          document.getElementById('service-btn').className = 'home-btn'
-          document.getElementById('about-btn').style.borderTop = '0'
+          document.getElementById('about-content').style.marginTop = '180px'
+          document.getElementById('home-btn').className = 'home-btn'
+          document.getElementById('service-btn').className = 'service-fixed-bottom-up'
+          document.getElementById('invite-btn').className = 'invite-fixed-bottom-up'
+          document.getElementById('about-btn').className = 'about-fixed-bottom-up'
+          // document.getElementById('about-btn').className = 'home-btn'
+          // document.getElementById('service-btn').className = 'home-btn'
+          // document.getElementById('about-btn').style.borderTop = '0'
+        } else {
+          this.idStr = 'invite-content'
+          this.idContentArr[0] = 'home-content'
+          this.idContentArr[1] = 'service-content'
+          this.idContentArr[2] = 'about-content'
+          this.idBtnArr = []
+          document.getElementById('invite-content').style.margin = '0 0 130px 0'
+          document.getElementById('invite-btn').className = 'home-btn'
+          document.getElementById('home-btn').className = 'home-btn'
+          document.getElementById('service-btn').className = 'service-fixed-bottom'
+          document.getElementById('about-btn').className = 'about-fixed-bottom'
         }
         document.getElementById(this.idStr).style.display = 'block'
         document.getElementById(this.idContentArr[0]).style.display = 'none'
         document.getElementById(this.idContentArr[1]).style.display = 'none'
+        document.getElementById(this.idContentArr[2]).style.display = 'none'
       },
       showMenuList: function () {
         if (this.isShowMenuList) {
@@ -139,6 +174,9 @@
     display: none;
   }
   #about-content{
+    display: none;
+  }
+  #invite-content{
     display: none;
   }
   .menu-list{
@@ -190,4 +228,54 @@
   font-size:20px;
   color:#4E4E4E;
 }
+.invite-fixed-bottom{
+  position: fixed;
+  left: 0;
+  bottom: 120px;
+  width:100%;
+  padding:16px 0;
+  background-color: #FCFCFC;
+  border-bottom: 1px solid #D6D6D6;
+  border-top: 1px solid #D6D6D6;
+  text-align: center;
+  font-size:20px;
+  color:#4E4E4E;
+}
+.about-fixed-bottom-up{
+  position: absolute;
+  left: 0;
+  top:180px;
+  width:100%;
+  padding:16px 0;
+  background-color: #FCFCFC;
+  border-bottom: 1px solid #D6D6D6;
+  text-align: center;
+  font-size:20px;
+  color:#4E4E4E;
+}
+.service-fixed-bottom-up{
+  position: absolute;
+  left: 0;
+  top:120px;
+  width:100%;
+  padding:16px 0;
+  background-color: #FCFCFC;
+  border-bottom: 1px solid #D6D6D6;
+  text-align: center;
+  font-size:20px;
+  color:#4E4E4E;
+}
+  .invite-fixed-bottom-up{
+    position: absolute;
+    left: 0;
+    top:60px;
+    width:100%;
+    padding:16px 0;
+    background-color: #FCFCFC;
+    border-bottom: 1px solid #D6D6D6;
+    border-top: 1px solid #D6D6D6;
+    text-align: center;
+    font-size:20px;
+    color:#4E4E4E;
+  }
 </style>
