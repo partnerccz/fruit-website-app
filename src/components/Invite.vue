@@ -1,6 +1,6 @@
 <template>
   <div id="invite-container">
-    <img src="../images/invite.jpg" width="100%"/>
+    <img src="../images/invite1-2.jpg" width="100%"/>
   </div>
 </template>
 
@@ -14,7 +14,5 @@
 #invite-container{
   margin:0px;
   padding: 0px;
-  background-image: url('../images/invite1-2.jpg');
-  background-size: auto;
 }
 </style>
